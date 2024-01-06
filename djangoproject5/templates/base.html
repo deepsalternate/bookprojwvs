@@ -5,9 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
 </head>
 <body>
+    <header>
+    <div class="nav-left">
+        <h1><a href="{% url 'blog:post_list' %}">Django blog</a></h1>
+        </div>
+        <div class="nav-right">
+        <a href="">+ New Blog Post</a>
+        </div>
+        </header>
     {% block content %}
     {% endblock content %}
 </body>
